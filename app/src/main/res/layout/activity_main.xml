@@ -8,12 +8,14 @@
     tools:context=".MainActivity">
 
     <include
-        layout="@layout/signin_page"
         android:id="@+id/signin_view"
+        layout="@layout/signin_page"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"
-        />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <include
         layout="@layout/signup_page"
         android:id="@+id/signup_view"

@@ -9,7 +9,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtUsername"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="271dp"
+        android:layout_width="291dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="310dp"
@@ -35,10 +35,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="271dp"
-        android:layout_height="63dp"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="400dp"
         android:layout_marginEnd="70dp"
         android:hint="Password"
         android:textColorHint="#A7A7A7"
@@ -56,28 +56,32 @@
             android:textColor="#5B5B5B"
             android:textSize="15sp"
             android:textStyle="bold"
+
+            android:inputType="textPassword"
             tools:ignore="TouchTargetSizeCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="271dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="LOGIN"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
         app:backgroundTint="#FF0F4E9B"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textSignUp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        app:layout_constraintVertical_bias="0.060000002" />
 
     <TextView
         android:id="@+id/textDontHaveAcc"
-        android:layout_width="139dp"
+        android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:text="Don't have account?"
         android:textAlignment="center"
@@ -92,7 +96,7 @@
     <TextView
         android:id="@+id/textSignUp"
         android:layout_width="135dp"
-        android:layout_height="18dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="44dp"
         android:text="SIGN UP"
         android:textAlignment="center"
@@ -120,9 +124,9 @@
 
     <TextView
         android:id="@+id/slogan"
-        android:layout_width="189dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
         android:shadowColor="@color/SandyBrown"
         android:shadowDx="3"
         android:shadowDy="3"
@@ -133,9 +137,7 @@
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/materialButtonToggleGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.981"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/logo"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.0" />
 
